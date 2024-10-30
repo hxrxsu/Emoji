@@ -1,0 +1,25 @@
+﻿<Window x:Class="Emoji.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Emoji"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="129*"/>
+            <ColumnDefinition Width="31*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="LB_Items" Grid.Column="1">
+            <ListBoxItem x:Name="LI_Sad" Content="Sad"/>
+            <ListBoxItem x:Name="LI_Criminal"  Content="Criminal"/>
+            <ListBoxItem x:Name="LI_Spy" Content="Spy"/>
+        </ListBox>
+        <Image x:Name="IMG_Levels" Source="guardian.png" Stretch="Fill"/>
+        <Button x:Name="BN_Sad" Content="" Opacity="0" HorizontalAlignment="Left" Margin="368,217,0,0" VerticalAlignment="Top" Height="71" Width="87" Click="BN_Sad_Click"/>
+        <Button x:Name="BN_Criminal" Visibility="Hidden" Content="" Opacity="0" HorizontalAlignment="Left" Margin="101,186,0,0" VerticalAlignment="Top" Height="52" Width="87" Click="BN_Criminal_Click"/>
+        <Button x:Name="BN_Spy" Visibility="Hidden" Content="" Opacity="0" HorizontalAlignment="Left" Margin="540,10,0,0" VerticalAlignment="Top" Height="71" Width="87" Click="BN_Spy_Click"/>
+
+    </Grid>
+</Window>
